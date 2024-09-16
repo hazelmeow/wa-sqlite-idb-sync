@@ -1,0 +1,26 @@
+{
+  "name": "wa-sqlite-idb-sync",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/wa-sqlite-idb-sync.umd.cjs",
+  "module": "./dist/wa-sqlite-idb-sync.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wa-sqlite-idb-sync.js",
+      "require": "./dist/wa-sqlite-idb-sync.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
+}
