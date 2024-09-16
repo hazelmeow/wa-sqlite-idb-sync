@@ -42,6 +42,7 @@ const useWatchQuery = (sql, parameters) => {
 ```
 
 ## Future Improvements
+* Upstream `sqlite3_update_hook` support in `wa-sqlite`.
 * Detect what tables are queried/changed and selectively invalidate them?
 * The stock IndexedDB VFS maybe has some problems? I have ran into a few runtime errors.
 * It would be nice if `wa-sqlite` was written in TypeScript and packaged more typically.
