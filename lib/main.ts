@@ -4,9 +4,6 @@ import { useMemoryStorage } from "./sqlite/memoryVfs";
 import { SqliteOptions, Sqlite } from "./sqlite/types";
 import { isIdbSupported } from "./sqlite/utils";
 
-import wasmSyncUrl from "wa-sqlite/dist/wa-sqlite.wasm?url";
-import wasmAsyncUrl from "wa-sqlite/dist/wa-sqlite-async.wasm?url";
-
 export type SQLiteCompatibleType =
   | number
   | string
@@ -48,15 +45,12 @@ export class SqliteSync {
     if (isIdbSupported()) {
       sqliteOptions = useIdbStorage(name, {
         lockPolicy: "exclusive",
-        url: wasmAsyncUrl,
       });
     } else {
       console.warn(
         "SqliteSync: IndexedDB or Web Locks is not supported, falling back to memory VFS"
       );
-      sqliteOptions = useMemoryStorage({
-        url: wasmSyncUrl,
-      });
+      sqliteOptions = useMemoryStorage({});
     }
 
     this.sqlite = initSqlite(sqliteOptions);

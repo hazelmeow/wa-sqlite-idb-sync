@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      wa-sqlite:
-        specifier: file:../wa-sqlite
-        version: file:../wa-sqlite
     devDependencies:
       '@kitajs/html':
         specifier: ^4.2.1
@@ -390,9 +386,6 @@ packages:
       terser:
         optional: true
 
-  wa-sqlite@file:../wa-sqlite:
-    resolution: {directory: ../wa-sqlite, type: directory}
-
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -667,8 +660,6 @@ snapshots:
       rollup: 4.21.3
     optionalDependencies:
       fsevents: 2.3.3
-
-  wa-sqlite@file:../wa-sqlite: {}
 
   wrap-ansi@7.0.0:
     dependencies:

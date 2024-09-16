@@ -19,9 +19,6 @@
     "dev": "vite",
     "build": "tsc && vite build"
   },
-  "dependencies": {
-    "wa-sqlite": "file:../wa-sqlite"
-  },
   "devDependencies": {
     "@kitajs/html": "^4.2.1",
     "@kitajs/ts-html-plugin": "^4.0.2",
