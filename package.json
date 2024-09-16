@@ -1,6 +1,7 @@
 {
   "name": "wa-sqlite-idb-sync",
   "private": true,
+  "license": "MIT",
   "version": "0.0.0",
   "type": "module",
   "files": [
@@ -18,7 +19,12 @@
     "dev": "vite",
     "build": "tsc && vite build"
   },
+  "dependencies": {
+    "wa-sqlite": "file:../wa-sqlite"
+  },
   "devDependencies": {
+    "@kitajs/html": "^4.2.1",
+    "@kitajs/ts-html-plugin": "^4.0.2",
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
   },
