@@ -7,7 +7,7 @@ It uses `IDBBatchAtomicVFS`, falling back to `MemoryAsyncVFS` when IndexedDB and
 Web Locks are not supported.
 
 Currently, detecting changes uses `sqlite3_update_hook` which I implemented in
-[my fork of wa-sqlite](https://github.com/hazelmeow/wa-sqlite/tree/update-hook).
+[my fork of wa-sqlite](https://github.com/fractalbeauty/wa-sqlite/tree/update-hook).
 A build of the `update-hook` branch is vendored in `vendor/wa-sqlite/`.
 
 ## Examples
